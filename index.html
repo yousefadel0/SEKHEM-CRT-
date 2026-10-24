@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#0b171b">
+  <title>الدخول إلى Sekhem بأمان</title>
+  <style>
+    :root{color-scheme:dark;--bg:#0b171b;--panel:#11262b;--panel2:#172f34;--line:#29464c;--gold:#e2cb82;--text:#f1f4f3;--muted:#b3c3c5;--cyan:#8cd3d6;--green:#8fd2a4;--red:#ffb0a5}
+    *{box-sizing:border-box}body{margin:0;background:radial-gradient(ellipse at 50% 0,#17343a 0,transparent 52%),var(--bg);color:var(--text);font-family:"Segoe UI",Tahoma,Arial,sans-serif;line-height:1.7}a{color:var(--cyan)}.wrap{width:min(900px,calc(100% - 32px));margin:0 auto;padding:30px 0 60px}.brand{display:flex;align-items:center;gap:12px;margin-bottom:28px}.mark{display:grid;place-items:center;width:46px;height:46px;border:1px solid #58634b;border-radius:15px;color:var(--gold);font-size:27px;font-weight:800}.brand span{font-size:20px;font-weight:700;letter-spacing:.04em;color:var(--gold)}.hero,.card{background:linear-gradient(145deg,rgba(21,48,54,.96),rgba(14,31,36,.96));border:1px solid var(--line);border-radius:22px;box-shadow:0 18px 55px #0003}.hero{padding:34px clamp(22px,5vw,54px);margin-bottom:18px}.eyebrow{color:var(--cyan);font-size:13px;letter-spacing:.12em;font-weight:700}h1{font-size:clamp(27px,5vw,40px);line-height:1.25;margin:8px 0 12px;color:var(--gold)}h2{font-size:21px;margin:0 0 10px}.lead{font-size:17px;color:#e1e9e8;margin:0}.hint{color:var(--muted);font-size:14px;margin:10px 0 0}.steps{display:grid;gap:15px}.card{padding:24px clamp(18px,4vw,32px)}.step-title{display:flex;align-items:center;gap:12px;margin-bottom:12px}.number{flex:none;display:grid;place-items:center;width:34px;height:34px;border-radius:50%;background:#263b36;color:var(--gold);font-weight:800;border:1px solid #596047}.card p{margin:7px 0;color:var(--muted)}.actions{display:flex;flex-wrap:wrap;gap:10px;margin-top:16px}.btn{appearance:none;border:1px solid #5b634b;border-radius:12px;padding:11px 17px;background:var(--gold);color:#152126;font:700 15px inherit;text-decoration:none;cursor:pointer;display:inline-flex;align-items:center;justify-content:center;gap:8px}.btn.secondary{background:#172b30;border-color:#405b60;color:var(--text)}.btn:hover{filter:brightness(1.08)}.code-wrap{position:relative;margin:12px 0 8px;direction:ltr;text-align:left}.code{display:block;overflow:auto;white-space:pre-wrap;overflow-wrap:anywhere;background:#081216;border:1px solid #29454b;border-radius:12px;padding:15px 112px 15px 15px;color:#ddeddf;font:13px/1.65 Consolas,"Cascadia Code",monospace;min-height:56px}.copy{position:absolute;right:8px;top:8px;padding:7px 10px;border-radius:8px;background:#1c353a;color:var(--text);border:1px solid #426066;cursor:pointer;font:13px "Segoe UI",sans-serif}.ltr{direction:ltr;text-align:left}.callout{border-right:3px solid var(--gold);background:#2c2a1e55;padding:12px 15px;border-radius:8px;color:#e7dfc5;margin-top:14px}.warning{border-right-color:var(--red);background:#3a242455;color:#f3d1cb}.status{min-height:24px;color:var(--green);font-size:14px}.footer{text-align:center;color:#8fa5a8;font-size:13px;margin-top:20px}.url{direction:ltr;unicode-bidi:embed;display:inline-block;font-weight:700;color:var(--cyan)}@media(max-width:560px){.wrap{width:min(100% - 20px,900px);padding-top:18px}.hero{padding:25px 20px}.card{padding:20px 16px}.btn{width:100%}.code{padding-right:15px;padding-top:48px}.copy{right:auto;left:8px}}
+  </style>
+</head>
+<body>
+  <main class="wrap">
+    <div class="brand"><div class="mark" aria-hidden="true">S</div><span>SEKHEM</span></div>
+    <section class="hero">
+      <div class="eyebrow">دليل دخول الفريق</div>
+      <h1>ادخل إلى Sekhem بأمان</h1>
+      <p class="lead">نفّذ الخطوات دي مرة واحدة على كل جهاز. بعد كده هتفتح Sekhem وتسجّل بحسابك عادي.</p>
+      <p class="hint">الموقع خاص بالفريق، ومش هيشتغل من الإنترنت العام. لازم دعوة Tailscale تكون اتقبلت والتطبيق يكون متصل.</p>
+    </section>
+
+    <div class="steps">
+      <section class="card">
+        <div class="step-title"><span class="number">١</span><h2>اتصل بشبكة الفريق</h2></div>
+        <p>ثبّت Tailscale على جهازك، سجّل بالحساب الذي قبل دعوة مسؤول الشبكة، ثم تأكد أن حالته <b>Connected</b>.</p>
+        <p>لو ما وصلتكش دعوة لمشاركة جهاز <b>sekhem</b>، اطلبها من مسؤول Tailscale.</p>
+      </section>
+
+      <section class="card">
+        <div class="step-title"><span class="number">٢</span><h2>نزّل شهادة الاتصال</h2></div>
+        <p>اضغط الزر واحفظ الملف باسم <bdi dir="ltr">sekhem-tailnet-root.crt</bdi> في مجلد <b>Downloads</b>.</p>
+        <div class="actions"><a class="btn" href="sekhem-tailnet-root.crt" download="sekhem-tailnet-root.crt">⬇ تنزيل شهادة Sekhem</a></div>
+        <div class="callout">الشهادة ملف أمان عام للتحقق من اتصال Sekhem. ثبّتها فقط إذا كانت بصمتها في الخطوة التالية مطابقة.</div>
+      </section>
+
+      <section class="card">
+        <div class="step-title"><span class="number">٣</span><h2>تحقق من الملف وثبّته</h2></div>
+        <p>افتح PowerShell العادي من قائمة Start، والصق أمر التحقق التالي. مش محتاج تفتحه كمسؤول.</p>
+        <div class="code-wrap"><code class="code" id="verify">$cert = "$env:USERPROFILE\Downloads\sekhem-tailnet-root.crt"
+$expected = "48A655E260028585EBC4FB933B2D64B0621F27F485708DA83C62EA5DF2FFCE35"
+$actual = (Get-FileHash -LiteralPath $cert -Algorithm SHA256).Hash
+if ($actual -ne $expected) { throw "البصمة غير مطابقة؛ لا تثبت الشهادة." }
+"البصمة سليمة. يمكنك تثبيت الشهادة الآن."</code><button class="copy" data-copy="verify">نسخ الأمر</button></div>
+        <p>لو ظهرت رسالة <b>البصمة سليمة</b>، انسخ الأمر التالي والصقه في PowerShell:</p>
+        <div class="code-wrap"><code class="code" id="install">$cert = "$env:USERPROFILE\Downloads\sekhem-tailnet-root.crt"
+Import-Certificate -FilePath $cert -CertStoreLocation Cert:\CurrentUser\Root</code><button class="copy" data-copy="install">نسخ الأمر</button></div>
+        <p class="hint">التثبيت لحساب Windows الحالي فقط، ومرة واحدة على كل جهاز.</p>
+        <div class="status" id="copyStatus" role="status" aria-live="polite"></div>
+      </section>
+
+      <section class="card">
+        <div class="step-title"><span class="number">٤</span><h2>افتح Sekhem وسجّل</h2></div>
+        <p>بعد تشغيل Tailscale وتثبيت الشهادة، افتح الرابط وسجّل بالبريد وكلمة المرور الخاصة بحساب Sekhem الذي أعطاك إياه المسؤول.</p>
+        <div class="actions"><a class="btn" href="https://sekhem.tail816c86.ts.net/" target="_blank" rel="noopener">فتح Sekhem ↗</a></div>
+        <div class="callout warning">لو ما عندكش حساب Sekhem، اطلب من مسؤول Sekhem إنشاء حساب خاص بك. ما تستخدمش حساب شخص آخر.</div>
+      </section>
+    </div>
+    <div class="footer">تحتاج مساعدة؟ تواصل مع مسؤول Tailscale أو مسؤول حساب Sekhem.</div>
+  </main>
+  <script>
+    const status = document.getElementById('copyStatus');
+    document.querySelectorAll('[data-copy]').forEach(button => button.addEventListener('click', async () => {
+      const text = document.getElementById(button.dataset.copy).textContent;
+      try { await navigator.clipboard.writeText(text); status.textContent = 'تم نسخ الأمر. الصقه في PowerShell.'; }
+      catch { status.textContent = 'حدد الأمر وانسخه يدويًا باستخدام Ctrl+C.'; }
+      window.setTimeout(() => { status.textContent = ''; }, 3500);
+    }));
+  </script>
+</body>
+</html>
